@@ -33,7 +33,7 @@ Bots **cannot**:
 
 When venturing to create a bot, I highly recommend using a language which is either dynamic/duck typed (e.g. JavaScript/TypeScript or Python) or one which supports dynamic/duck typing in some form (e.g. C# via `dynamic`). Do *not* use a single monolith class to represent every message type. This will cause only pain and suffering. Trust me on this one.
 
-**The first and most important thing to do when creating a bot is to make it nontrivial to use unauthorized.** This is good practice in general, but *especially* if your code is open-source it is critical to make sure that it's not easy for anyone without knowledge of code to enter their own user token into the bot and run it on their account. The best way to do this is to make an API call to the [`users/me` API endpoint](API-ENDPOINTS/users-me.md) and refuse to run if the user's role is anything other than `"bot"`.
+**The first and most important thing to do when creating a bot is to make it nontrivial to use unauthorized.** This is good practice in general, but *especially* if your code is open-source it is critical to make sure that it's not easy for anyone without knowledge of code to enter their own user token into the bot and run it on their account. The best way to do this is to make an API call to the [`users/me` API endpoint](API-Endpoints/users-me.md) and refuse to run if the user's role is anything other than `"bot"`.
 
 Once you're done with that, the core of a TETR.IO bot is interfacing with the [Ribbon](Ribbon.md) system.
 
@@ -47,8 +47,8 @@ Once you're done with that, the core of a TETR.IO bot is interfacing with the [R
     * [Observing Ribbon](Observing_Ribbon.md)
     * [Resuming a connection](Resuming_a_connection.md)
 * API messages
-    * [server/environment](API-ENDPOINTS/server-environment.md)
-    * [users/me](API-ENDPOINTS/users-me.md)
+    * [server/environment](API-Endpoints/server-environment.md)
+    * [users/me](API-Endpoints/users-me.md)
 * Guides
     * [Chat](Chat.md)
 * Game mechanics
