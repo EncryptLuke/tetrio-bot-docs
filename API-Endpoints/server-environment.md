@@ -9,20 +9,20 @@ To use this endpoint, you do not need any authorization token.
 
 * (object):
     * (boolean) `success`: Indicates if the request was successful.
-    * (object) `stats`: Contains various statistics about the server.
+    * (object) `stats`: Contains various statistics about the game.
         * (number) `players`: The total number of players.
         * (number) `users`: The total number of users.
         * (number) `gamesplayed`: Total number of games played.
         * (number) `gametime`: Total game time in milliseconds.
     * (object) `signature`: Provides signature and configuration details.
-        * (string) `version`: Current game version..
+        * (string) `version`: Current game version.
         * (boolean) `countdown`: Countdown configuration.
         * (boolean) `novault`: Indicates if OSK Vault is off.
         * (boolean) `noceriad`: Indicates if the ceriad feature is off.
         * (boolean) `norichpresence`: Indicates if Discord Rich Presence is disabled.
         * (boolean) `noreplaydispute`: Indicates if replay dispute feature is off.
-        * (number) `supporter_specialthanks_goal`: Goal amount for special thanks supporters.
-        * (number) `xp_multiplier`: Experience points multiplier.
+        * (number) `supporter_specialthanks_goal`: Goal amount for a supporter getting the special thanks/huge supporter badge.
+        * (number) `xp_multiplier`: XP Multiplier for special events.
         * (object) `catalog`: Contains pricing details for supporters.
             * (object) `supporter`: Pricing details for supporter subscriptions.
                 * (number) `price`: Base price.
